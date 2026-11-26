@@ -1,0 +1,36 @@
+# build output
+dist/
+.astro/
+
+# dependencies
+node_modules/
+
+# logs & env
+npm-debug.log*
+.env
+.env.*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+
+# File CV kerja (berisi nomor HP) — jangan ikut ke repo publik.
+# Versi publik untuk diunduh pengunjung (tanpa nomor HP) ada di public/cv/.
+/CV_*
+
+# Foto asli (sertifikat dengan NIM belum disensor, screenshot Instagram, dll).
+# Versi yang sudah di-crop/sensor untuk website ada di public/photos/ dan public/me.webp.
+/png/
+
+# Script pembuat CV (berisi nomor HP) — tidak ikut ke repo publik.
+/cv-builder/
+
+# Draf (tulisan blog, profile README GitHub, rencana project) — belum untuk publik.
+/drafts/
+
+# Catatan & laporan riset (bukan bagian website)
+/research_notes/
+/reports/
+/preview.html
