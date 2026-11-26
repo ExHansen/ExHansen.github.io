@@ -296,7 +296,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/projects/llm-doc-extractor.webp",
+      image: "/projects/llm-doc-extractor.png",
       video: "",
     },
     {
