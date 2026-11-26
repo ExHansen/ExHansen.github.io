@@ -21,7 +21,7 @@ export const DATA = {
   description:
     "Data & AI engineer in Jakarta. I build data pipelines and AI tools, and I measure whether they're right instead of assuming it.",
   summary:
-    "I work on data quality at [Insignia](/#work), an e-commerce data consultancy. Most of my work is turning business logic into checks: validation rules that run daily across ~20 production datasets, reconciliation against source-of-truth data, and root cause analysis when the numbers don't add up. I also build the pipelines themselves: I co-led our ~2 TB migration from BigQuery to ClickHouse + dbt, cut a mapping job from ~5 to ~2 minutes, and I'm a [ClickHouse-certified developer](/#hackathons).\n\nI graduated top of my class in Information Systems at [UPNVJ](/#education) (GPA 3.95/4.0). Outside work I build [data and AI projects](/#projects) where quality is measured, not assumed: **CareerOS Studio** (a $0/month dbt + Dagster + LangGraph job-market & CV agent with an anti-hallucination critic), a PayLater platform whose checks caught 8 injected faults within 2 minutes, a quality-control layer for LLM document extraction, an FMCG platform with demand forecasting, and an NLP classifier with 98% test accuracy. I'm looking for **Data Engineer** and **AI Engineer** roles, where a data-quality background helps every pipeline and every model.",
+    "I work on data quality at [Insignia](/#work), an e-commerce data consultancy. Most of my work is turning business logic into checks: validation rules that run daily across ~20 production datasets, reconciliation against source-of-truth data, and root cause analysis when the numbers don't add up. I also build the pipelines themselves: I co-led our ~2 TB migration from BigQuery to ClickHouse + dbt, cut a mapping job from ~5 to ~2 minutes, and I'm a [ClickHouse-certified developer](/#hackathons).\n\nI graduated top of my class in Information Systems at [UPNVJ](/#education) (GPA 3.95/4.0). Outside work I build [data and AI projects](/#projects) where quality is measured, not assumed: **Aegis Gateway** (a Rust AI gateway & reversible PII firewall hitting 4,875 req/s at 0.022 ms p50 overhead with 100% PII precision/recall), **CareerOS Studio** (a $0/month dbt + Dagster + LangGraph job-market & CV agent), a PayLater platform whose checks caught 8 injected faults within 2 minutes, a quality-control layer for LLM document extraction, and an FMCG platform with demand forecasting. I'm looking for **Data Engineer** and **AI Engineer** roles, where a data-quality background helps every pipeline and every model.",
   avatarUrl: "/me.webp",
   ogImage: "/og_image.png",
   sections: {
@@ -94,6 +94,8 @@ export const DATA = {
       items: [
         { name: "Python", logo: "/tools/python.svg", color: "#3776AB" },
         { name: "SQL" },
+        { name: "Rust" },
+        { name: "TypeScript" },
       ],
     },
     {
@@ -234,6 +236,27 @@ export const DATA = {
     },
   ],
   projects: [
+    {
+      title: "Aegis Gateway — Rust AI Gateway, Semantic Cache & PII Firewall",
+      href: "#projects",
+      dates: "AI Systems & Security · Nov 2026",
+      active: true,
+      description:
+        "Self-contained **Rust (`axum`/`tokio`)** OpenAI-compatible AI gateway with a partitioned 384-d semantic cache, reversible PII firewall (Regex + Luhn + ISO/IEC 7812 + Indonesian NIK), and Bun observability console. Benchmarked at **4,875.7 req/s** with **0.022 ms p50 overhead**, **91.7% cache hit rate (~466x faster than warm local 7B inference)**, **100% PII Precision/Recall (0% hard-negative FPR, 0 raw secrets leaked)**, and **20/20 auto-failover recovery** under 60% injected HTTP 429 faults.",
+      technologies: [
+        "Rust",
+        "Axum / Tokio",
+        "Bun",
+        "TypeScript",
+        "React",
+        "Semantic Cache",
+        "PII Firewall",
+        "Ollama",
+      ],
+      links: [],
+      image: "/projects/aegis-gateway.png",
+      video: "",
+    },
     {
       title: "CareerOS Studio — Local-First AI Agent & Job Market Platform",
       href: "https://github.com/ExHansen/cv-job-market-agent",
